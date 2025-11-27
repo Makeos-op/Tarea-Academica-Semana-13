@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dato
 {
-    internal class DHistorialHistorialEmpleos
+    public class DHistorialHistorialEmpleos
     {
         private string EjecutarFuncion(Func<BDEFEntities,string> funcion) //Recibe una funcion llamada funcion que reciba objeto BDEFEntities y retorne un string
         {
