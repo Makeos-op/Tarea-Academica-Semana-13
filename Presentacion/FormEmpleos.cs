@@ -34,6 +34,19 @@ namespace Presentacion
             TB_salariomax.Clear();
             TB_salariomin.Clear();
         }
+        private int GenerarCodigo()
+        {
+
+            if ( nEmpleos.ListarTodo().Count == 0)
+            {
+                return 1;
+            }
+            else 
+            {
+                return nEmpleos.ListarTodo().Max(e => e.Codigo) + 1;
+            }
+        }
+
         private bool Validacion(out Empleos empleo)
         {
             empleo = null;
@@ -82,8 +95,11 @@ namespace Presentacion
                                 MessageBoxIcon.Error);
                 return false;
             }
+            int codigoGenerado = GenerarCodigo();
+
             empleo = new Empleos
             {
+                Codigo = codigoGenerado,
                 Salario_minimo = salarioMin,
                 Salario_maximo = salarioMax
             };
