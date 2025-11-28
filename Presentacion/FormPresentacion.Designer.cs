@@ -30,7 +30,6 @@
         {
             this.Empleos = new System.Windows.Forms.Button();
             this.Salir = new System.Windows.Forms.Button();
-            this.Reportes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Empleos
@@ -39,13 +38,13 @@
             this.Empleos.Name = "Empleos";
             this.Empleos.Size = new System.Drawing.Size(207, 43);
             this.Empleos.TabIndex = 0;
-            this.Empleos.Text = "button1";
+            this.Empleos.Text = "Empleos";
             this.Empleos.UseVisualStyleBackColor = true;
             this.Empleos.Click += new System.EventHandler(this.Empleos_Click);
             // 
             // Salir
             // 
-            this.Salir.Location = new System.Drawing.Point(40, 131);
+            this.Salir.Location = new System.Drawing.Point(40, 82);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(207, 43);
             this.Salir.TabIndex = 1;
@@ -53,22 +52,11 @@
             this.Salir.UseVisualStyleBackColor = true;
             this.Salir.Click += new System.EventHandler(this.Salir_Click);
             // 
-            // Reportes
-            // 
-            this.Reportes.Location = new System.Drawing.Point(40, 82);
-            this.Reportes.Name = "Reportes";
-            this.Reportes.Size = new System.Drawing.Size(207, 43);
-            this.Reportes.TabIndex = 3;
-            this.Reportes.Text = "button1";
-            this.Reportes.UseVisualStyleBackColor = true;
-            this.Reportes.Click += new System.EventHandler(this.Reportes_Click);
-            // 
             // FormPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 213);
-            this.Controls.Add(this.Reportes);
+            this.ClientSize = new System.Drawing.Size(286, 142);
             this.Controls.Add(this.Salir);
             this.Controls.Add(this.Empleos);
             this.Name = "FormPresentacion";
@@ -81,6 +69,5 @@
 
         private System.Windows.Forms.Button Empleos;
         private System.Windows.Forms.Button Salir;
-        private System.Windows.Forms.Button Reportes;
     }
 }

@@ -27,11 +27,5 @@ namespace Presentacion
         {
             this.Close();
         }
-
-        private void Reportes_Click(object sender, EventArgs e)
-        {
-            FormReporte form = new FormReporte();
-            form.Show();
-        }
     }
 }
