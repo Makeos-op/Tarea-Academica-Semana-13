@@ -63,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 151);
+            this.label3.Location = new System.Drawing.Point(23, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 2;
@@ -85,14 +85,14 @@
             // 
             // TB_salariomax
             // 
-            this.TB_salariomax.Location = new System.Drawing.Point(74, 148);
+            this.TB_salariomax.Location = new System.Drawing.Point(74, 145);
             this.TB_salariomax.Name = "TB_salariomax";
             this.TB_salariomax.Size = new System.Drawing.Size(195, 22);
             this.TB_salariomax.TabIndex = 5;
             // 
             // Registrar
             // 
-            this.Registrar.Location = new System.Drawing.Point(74, 199);
+            this.Registrar.Location = new System.Drawing.Point(74, 181);
             this.Registrar.Name = "Registrar";
             this.Registrar.Size = new System.Drawing.Size(75, 23);
             this.Registrar.TabIndex = 6;
@@ -102,7 +102,7 @@
             // 
             // Modificar
             // 
-            this.Modificar.Location = new System.Drawing.Point(175, 199);
+            this.Modificar.Location = new System.Drawing.Point(175, 181);
             this.Modificar.Name = "Modificar";
             this.Modificar.Size = new System.Drawing.Size(75, 23);
             this.Modificar.TabIndex = 7;
@@ -112,7 +112,7 @@
             // 
             // Eliminar
             // 
-            this.Eliminar.Location = new System.Drawing.Point(74, 242);
+            this.Eliminar.Location = new System.Drawing.Point(74, 224);
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Size = new System.Drawing.Size(75, 23);
             this.Eliminar.TabIndex = 8;
@@ -132,7 +132,7 @@
             // 
             // Historial_Empleos
             // 
-            this.Historial_Empleos.Location = new System.Drawing.Point(175, 242);
+            this.Historial_Empleos.Location = new System.Drawing.Point(175, 224);
             this.Historial_Empleos.Name = "Historial_Empleos";
             this.Historial_Empleos.Size = new System.Drawing.Size(75, 23);
             this.Historial_Empleos.TabIndex = 10;
@@ -144,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 305);
+            this.ClientSize = new System.Drawing.Size(792, 298);
             this.Controls.Add(this.Historial_Empleos);
             this.Controls.Add(this.dgEmpleos);
             this.Controls.Add(this.Eliminar);

@@ -23,9 +23,9 @@ namespace Negocio
         {
             return dhistorialempleos.Eliminar(codigo);
         }
-        public List<HistorialEmpleos> ListarTodo()
+        public List<HistorialEmpleos> ListarTodo(int empleocodigo)
         {
-            return dhistorialempleos.ListarTodo();
+            return dhistorialempleos.ListarTodo(empleocodigo);
         }
     }
 }

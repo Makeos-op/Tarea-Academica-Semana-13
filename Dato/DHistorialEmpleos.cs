@@ -55,14 +55,14 @@ namespace Dato
                 return "Empleo eliminado correctamente."; // Retorna un mensaje de exito
             });
         }
-        public List<HistorialEmpleos> ListarTodo()
+        public List<HistorialEmpleos> ListarTodo(int empleocodigo)
         {
             List<HistorialEmpleos> listaHistorialEmpleos = new List<HistorialEmpleos>();
             try
             {
                 using (var context = new BDEFEntities()) // Crea una instancia del contexto de la base de datos
                 {
-                    listaHistorialEmpleos = context.HistorialEmpleos.ToList(); // Ejecuta la funcion pasada como parametro con el contexto y retorna su resultado
+                    listaHistorialEmpleos = context.HistorialEmpleos.Where(i=>i.Codigo_empleo.Equals(empleocodigo)).ToList(); // Ejecuta la funcion pasada como parametro con el contexto y retorna su resultado
                 }
                 return listaHistorialEmpleos;
             }

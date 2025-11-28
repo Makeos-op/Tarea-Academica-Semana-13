@@ -19,7 +19,7 @@ namespace Presentacion
         {
             InitializeComponent();
         }
-        private void MostrarAlmacenes(List<Empleos> empleos)
+        private void MostrarEmpleos(List<Empleos> empleos)
         {
             dgEmpleos.DataSource = null;
             if (empleos.Count() == 0)
@@ -34,19 +34,6 @@ namespace Presentacion
             TB_salariomax.Clear();
             TB_salariomin.Clear();
         }
-        private int GenerarCodigo()
-        {
-
-            if ( nEmpleos.ListarTodo().Count == 0)
-            {
-                return 1;
-            }
-            else 
-            {
-                return nEmpleos.ListarTodo().Max(e => e.Codigo) + 1;
-            }
-        }
-
         private bool Validacion(out Empleos empleo)
         {
             empleo = null;
@@ -95,11 +82,8 @@ namespace Presentacion
                                 MessageBoxIcon.Error);
                 return false;
             }
-            int codigoGenerado = GenerarCodigo();
-
             empleo = new Empleos
             {
-                Codigo = codigoGenerado,
                 Salario_minimo = salarioMin,
                 Salario_maximo = salarioMax
             };
@@ -123,7 +107,7 @@ namespace Presentacion
             }
                 string mensaje = nEmpleos.RegistrarEmpleo(nuevoEmpleo);
                 MessageBox.Show(mensaje);
-                MostrarAlmacenes(nEmpleos.ListarTodo());
+                MostrarEmpleos(nEmpleos.ListarTodo());
                 LimpiarCampos();
         }
 
@@ -135,6 +119,8 @@ namespace Presentacion
                 return;
             }
             string mensaje = nEmpleos.Modificar(empleo);
+            MostrarEmpleos(nEmpleos.ListarTodo());
+            LimpiarCampos();
         }
 
         private void Eliminar_Click(object sender, EventArgs e)
@@ -145,11 +131,18 @@ namespace Presentacion
                 return;
             }
             string mensaje = nEmpleos.Eliminar(empleo.Codigo);
+            MostrarEmpleos(nEmpleos.ListarTodo());
+            LimpiarCampos();
         }
 
         private void Historial_Empleos_Click(object sender, EventArgs e)
         {
-
+            int valor = seleccionCodigo();
+            if (valor == 0)
+            {
+                return;
+            }
+            FormHistorial formHistorial = new FormHistorial(valor);
         }
     }
 }

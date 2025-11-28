@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgHistorial = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.Button();
             this.Modificar = new System.Windows.Forms.Button();
             this.Registrar = new System.Windows.Forms.Button();
@@ -38,18 +38,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Inicio = new System.Windows.Forms.DateTimePicker();
             this.Fin = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgHistorial)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgHistorial
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(306, 43);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(469, 239);
-            this.dataGridView1.TabIndex = 21;
+            this.dgHistorial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgHistorial.Location = new System.Drawing.Point(306, 43);
+            this.dgHistorial.Name = "dgHistorial";
+            this.dgHistorial.RowHeadersWidth = 51;
+            this.dgHistorial.RowTemplate.Height = 24;
+            this.dgHistorial.Size = new System.Drawing.Size(469, 239);
+            this.dgHistorial.TabIndex = 21;
             // 
             // Eliminar
             // 
@@ -135,7 +135,7 @@
             this.ClientSize = new System.Drawing.Size(800, 309);
             this.Controls.Add(this.Fin);
             this.Controls.Add(this.Inicio);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgHistorial);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.Modificar);
             this.Controls.Add(this.Registrar);
@@ -145,14 +145,14 @@
             this.Controls.Add(this.label1);
             this.Name = "FormHistorial";
             this.Text = "FormHistorial";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgHistorial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgHistorial;
         private System.Windows.Forms.Button Eliminar;
         private System.Windows.Forms.Button Modificar;
         private System.Windows.Forms.Button Registrar;
