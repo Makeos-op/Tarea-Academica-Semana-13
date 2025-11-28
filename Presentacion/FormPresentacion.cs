@@ -16,5 +16,22 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void Empleos_Click(object sender, EventArgs e)
+        {
+            FormEmpleos form = new FormEmpleos();
+            form.Show();
+        }
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Reportes_Click(object sender, EventArgs e)
+        {
+            FormReporte form = new FormReporte();
+            form.Show();
+        }
     }
 }
