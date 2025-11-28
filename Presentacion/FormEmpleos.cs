@@ -18,6 +18,7 @@ namespace Presentacion
         public FormEmpleos()
         {
             InitializeComponent();
+            MostrarEmpleos(nEmpleos.ListarTodo());
         }
         private void MostrarEmpleos(List<Empleos> empleos)
         {
@@ -100,6 +101,7 @@ namespace Presentacion
             empleo = new Empleos
             {
                 Codigo = codigoGenerado,
+                Nombre_empleo = TB_nombre.Text.Trim(),
                 Salario_minimo = salarioMin,
                 Salario_maximo = salarioMax
             };

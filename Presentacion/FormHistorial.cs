@@ -20,6 +20,7 @@ namespace Presentacion
         {
             InitializeComponent();
             codigohistorial = dato;
+            MostrarEmpleos(nhistorial.ListarTodo(codigohistorial));
         }
         private void MostrarEmpleos(List<HistorialEmpleos> historial)
         {

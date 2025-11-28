@@ -74,12 +74,6 @@
     <Compile Include="FormPresentacion.Designer.cs">
       <DependentUpon>FormPresentacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormReporte.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormReporte.Designer.cs">
-      <DependentUpon>FormReporte.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormEmpleos.resx">
