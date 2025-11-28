@@ -61,6 +61,7 @@ namespace Dato
             {
                 using (var context = new BDEFEntities()) // Crea una instancia del contexto de la base de datos
                 {
+                    context.Configuration.LazyLoadingEnabled = false;
                     listaEmpleos = context.Empleos.ToList(); // Ejecuta la funcion pasada como parametro con el contexto y retorna su resultado
                 }
                 return listaEmpleos;
